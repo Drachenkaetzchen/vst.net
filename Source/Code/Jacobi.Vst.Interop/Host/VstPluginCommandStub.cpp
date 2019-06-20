@@ -132,7 +132,7 @@ System::String^ VstPluginCommandStub::GetParameterDisplay(System::Int32 index)
 {
 	//UnmanagedString paramLabel(kVstMaxParamStrLen);
 	// Some plugin don't have 8 character param display values
-	UnmanagedString paramLabel(65);
+	UnmanagedString paramLabel(127);
 
 	CallDispatch(effGetParamDisplay, index, 0, paramLabel, 0);
 
